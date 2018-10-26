@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page titlt="netschool" logo="emainframe/images/logo.png" rootjs="eacl/commonjs/ping.js,eacl/commonjs/serverfunc.js">
+	<items id="navigators">
+		<item id="welcome" url="emainframe/index.do" title="首页"></item>
+		<item id="edatasource" url="edatasource/dsmgr.do?showcrums=true" resid="EDSO$0$server" title="数据源"></item>
+		<!-- <item id="dataprocess" url="dataprocess/index.do" resid="EDP$1$dataprocess" title="数据整合"></item> -->
+		<item id="dataprocess" url="edf/showpage.do?showcrums=true&amp;title=%25u6570%25u636E%25u6574%25u5408" resid="EDF$3$etlprocessing" title="数据整合"></item>
+		<item id="edatasubject" url="edatasubject/sujecttree.do?action=subjecttree&amp;showcrums=true" resid="EDSU$1$server" title="数据集"></item>
+		<item id="eanalysemgr" url="api/eana/analysemgr.do?showcrums=true" resid="EDSU$1$server" title="数据分析"></item>
+		<items id="eportal" resid="EPOR$1$portal" title="应用发布" hasDesc="true">
+			<item id="pc" url="eportal/pcportal.do" resid="EPOR$2$pcportal" title="PC门户" desc="便捷的门户定义，简单地拖拉拽控件即可实现自定义个性化门户和各种复杂的自定义门户，并支持多样式的预定义门户风格。"></item>
+			<!-- <item id="mobile" url="eportal/index.do" title="移动门户"></item>
+			<item id="cool" url="eportal/index.do" title="酷屏门户"></item> -->
+		</items>
+		<!-- <items id="edatamgr" title="数据治理">
+		</items> -->
+		<items id="esysmgr" title="系统管理" hasDesc="true">
+			<item id="usermgr" url="eacl/userpm.do" resid="EACL$16$userpermission" title="用户权限" desc="灵活的用户权限设置，提供多个角度、多个层面的权限管理，保证了企业级数据的安全性。"></item>
+			<!-- <item id="monitor" url="esysmgr/monitor.do" resid="" title="运营监控"></item>
+			<item id="developer" url="esysmgr/open/developer.do" resid="" title="二次开发"></item> -->
+			<item id="sys" url="esysmgr/mgrtree.do?showcrums=true" resid="ESYS$1$sysmgr" title="系统设置" desc="全面的的系统管理，通过图形化界面配置系统对象，方便用户进行多种系统参数配置与查看。"></item>
+			<item id="ditumgr" url="emapmgr/ditumgr.do?action=toparent" resid="EMAPMGR$1$mapmgr" title="地图管理" desc="简便的地图管理及定义，方便用户管理及定制各类地图，并支持自定义平面图的定义。"></item>
+			<item id="ditumgr" url="emapmgr/ditumgr.do?action=toparent" resid="a" title="a" desc="简便的地图管理及定义，方便用户管理及定制各类地图，并支持自定义平面图的定义。"></item>
+		</items>
+		<item id="eworkflow" title="工作流" url="eworkflow/workflowmgr.do" resid="EWOF$1$wfdefmgr"></item>
+	</items>
+	
+	<items id="buttons">
+		<items id="eusermgr" arrow="true" icon="&#xe0ca;" baseCss="eui-coolbar-item-user">
+			<item id="myfavour" url="eshare/favorite/favoritesetting.do" title="我的收藏"></item>
+			<item id="myshare" url="eshare/share/sharesetting.do" title="我的分享"></item>
+			<!-- <item id="mysubscription" url="eusermgr/mysubscription.do" title="我的订阅"></item> -->
+			<item id="usersetting" url="eacl/userset/usersetting.do" title="个人设置"></item>
+			<item id="logout" cmd="logOut" title="退出"></item>
+		</items>
+		<items id="emessagemgr" hint="信息" arrow="false" icon="&#xe0cb;" baseCss="eui-coolbar-item-mail">
+			<item id="notice" url="enotice/bulletin.do?onlyView=true" resid="ENOT$1$bulletin" title="公告"></item>
+			<!-- <item id="message" url="emessagemgr?message.do" title="站内信"></item>
+			<item id="bbs" url="emessagemgr?bbs.do" title="论坛"></item>
+			<item id="schedule" url="emessagemgr?schedule.do" title="待办事项"></item> -->
+		</items>
+		<item id="about" hint="关于" cmd="aboutDialog" arrow="false" icon="&#xe0cd;" baseCss="eui-coolbar-item-about"></item>
+	</items>
+</page>
