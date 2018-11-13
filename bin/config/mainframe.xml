@@ -3,8 +3,7 @@
 	<items id="navigators">
 		<item id="welcome" url="emainframe/index.do" title="首页"></item>
 		<item id="edatasource" url="edatasource/dsmgr.do?showcrums=true" resid="EDSO$0$server" title="数据源"></item>
-		<!-- <item id="dataprocess" url="http://www.baidu.com" resid="EDP$1$dataprocess" title="数据整合"></item> -->
-		<!--<item id="dataprocess" url="edf/showpage.do?showcrums=true&amp;title=%25u6570%25u636E%25u6574%25u5408" resid="EDF$3$etlprocessing" title="数据整合"></item>-->
+		<!-- <item id="dataprocess" url="dataprocess/index.do" resid="EDP$1$dataprocess" title="数据整合"></item> -->
 		<item id="dataprocess" url="edf/showpage.do?showcrums=true&amp;title=%25u6570%25u636E%25u6574%25u5408" resid="EDF$3$etlprocessing" title="数据整合"></item>
 		<item id="edatasubject" url="edatasubject/sujecttree.do?action=subjecttree&amp;showcrums=true" resid="EDSU$1$server" title="数据集"></item>
 		<item id="eanalysemgr" url="api/eana/analysemgr.do?showcrums=true" resid="EDSU$1$server" title="数据分析"></item>
