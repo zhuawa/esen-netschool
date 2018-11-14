@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <page titlt="netschool" logo="emainframe/images/logo.png" rootjs="eacl/commonjs/ping.js,eacl/commonjs/serverfunc.js">
 	<items id="navigators">
-		<item id="welcome" url="emainframe/index.do" title="首页"></item>
-		<item id="edatasource" url="edatasource/dsmgr.do?showcrums=true" resid="EDSO$0$server" title="数据源"></item>
+		<item id="welcome" url="page/index" title="首页"></item>
+		<items id="edatasource" url="page/courseCenter" resid="EDSO$0$server" title="课程中心">
+			<item id="sys" url="page/rms" resid="ESYS$1$sysmgr" title="系统设置" desc="全面的的系统管理，通过图形化界面配置系统对象，方便用户进行多种系统参数配置与查看。"></item>
+		</items>
+		<!-- <item id="edatasource" url="edatasource/dsmgr.do?showcrums=true" resid="EDSO$0$server" title="数据源"></item> -->
 		<!-- <item id="dataprocess" url="http://www.baidu.com" resid="EDP$1$dataprocess" title="数据整合"></item> -->
 		<!--<item id="dataprocess" url="edf/showpage.do?showcrums=true&amp;title=%25u6570%25u636E%25u6574%25u5408" resid="EDF$3$etlprocessing" title="数据整合"></item>-->
-		<item id="dataprocess" url="edf/showpage.do?showcrums=true&amp;title=%25u6570%25u636E%25u6574%25u5408" resid="EDF$3$etlprocessing" title="数据整合"></item>
-		<item id="edatasubject" url="edatasubject/sujecttree.do?action=subjecttree&amp;showcrums=true" resid="EDSU$1$server" title="数据集"></item>
+		<item id="dataprocess" url="page/teachCenter" resid="EDF$3$etlprocessing" title="教学中心"></item>
+		<item id="edatasubject" url="page/rms" resid="EDSU$1$server" title="资源管理"></item>
+		<!--<item id="edatasubject" url="edatasubject/sujecttree.do?action=subjecttree&amp;showcrums=true" resid="EDSU$1$server" title="数据集"></item>-->
 		<item id="eanalysemgr" url="api/eana/analysemgr.do?showcrums=true" resid="EDSU$1$server" title="数据分析"></item>
 		<items id="eportal" resid="EPOR$1$portal" title="应用发布" hasDesc="true">
 			<item id="pc" url="eportal/pcportal.do" resid="EPOR$2$pcportal" title="PC门户" desc="便捷的门户定义，简单地拖拉拽控件即可实现自定义个性化门户和各种复杂的自定义门户，并支持多样式的预定义门户风格。"></item>
