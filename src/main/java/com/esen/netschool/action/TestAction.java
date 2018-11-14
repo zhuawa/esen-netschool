@@ -15,7 +15,7 @@ public class TestAction {
 	TestService testService;
 	
 	@RequestMapping(value="/test", method=RequestMethod.GET)
-	public String test(@RequestParam(value="name") String name) {
+	public String test(@RequestParam(value="name", required=false) String name) {
 		return testService.getService(name);
 	}
 	

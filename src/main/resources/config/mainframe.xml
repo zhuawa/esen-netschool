@@ -9,7 +9,10 @@
 		<!-- <item id="dataprocess" url="http://www.baidu.com" resid="EDP$1$dataprocess" title="数据整合"></item> -->
 		<!--<item id="dataprocess" url="edf/showpage.do?showcrums=true&amp;title=%25u6570%25u636E%25u6574%25u5408" resid="EDF$3$etlprocessing" title="数据整合"></item>-->
 		<item id="dataprocess" url="page/teachCenter" resid="EDF$3$etlprocessing" title="教学中心"></item>
-		<item id="edatasubject" url="page/rms" resid="EDSU$1$server" title="资源管理"></item>
+		<items id="edatasubject" url="page/rms" resid="EDSU$1$server" title="资源管理">
+			<item id="coursewaremgr" url="page/rms/coursewaremgr" resid="" title="课件管理"></item>
+			<item id="learnresourcesmgr" url="page/rms/learnresourcesmgr" resid="" title="学习资源管理"></item>
+		</items>
 		<!--<item id="edatasubject" url="edatasubject/sujecttree.do?action=subjecttree&amp;showcrums=true" resid="EDSU$1$server" title="数据集"></item>-->
 		<item id="eanalysemgr" url="api/eana/analysemgr.do?showcrums=true" resid="EDSU$1$server" title="数据分析"></item>
 		<items id="eportal" resid="EPOR$1$portal" title="应用发布" hasDesc="true">
