@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resconfig>
+	<resources>
+		<resource id="ES$0$server" caption="公共平台服务器" captionKey="com.esen.eres.resource.xml.server" img="&#xe1ab;">
+			<resource id="EDSO$0$server" caption="数据源" captionKey="com.esen.eres.resource.xml.datasource" img="&#xe593;">
+				<resource id="EDSO$1$conndatasource" caption="连接池管理" captionKey="com.esen.eres.resource.xml.datasource" img="&#xe57a;">
+					<resType id="EDSO$2$" caption="连接池" helper="com.esen.edatasource.resources.JdbcDataSourceResHelper" captionKey="com.esen.eres.resource.xml.datasource" >
+					</resType>
+				</resource>
+				<resource id="EDSO$1$filedatasource" caption="文件数据源" captionKey="com.esen.eres.resource.xml.datasource" img="&#xe57b;">
+					<resType id="EDSO$5$,EDSO$6$" caption="文件数据源及分组" helper="com.esen.edatasource.resources.FileDataSourceResHelper">
+					</resType>
+				</resource>
+				<resource id="EDSO$1$interfacedatasource" caption="接口数据源" captionKey="com.esen.eres.resource.xml.datasource.interface" img="&#xe58c;">
+					<resType id="EDSO$7$" caption="接口数据源项" helper="com.esen.edatasource.resources.InterfaceDataSourceResHelper">
+					</resType>
+				</resource>
+			</resource>
+			<!-- <resource id="EDP$1$dataprocess" caption="数据整合" captionKey="com.esen.eres.resource.xml.edpprocess" img="&#xe589;">
+			</resource> -->
+			<resource id="EDSU$1$server" caption="主题管理" captionKey="com.esen.eres.resource.xml.server" img="&#xe1a4;">
+				<resType id="EDSU$2$" img="&#xe230;" helper="com.esen.edatasubject.resource.ProjectResourceHelper">
+					<resType id="EDIM$21$" caption="维表" helper="com.esen.edim.resource.DimensionMgrResourceHelper"
+						captionKey="com.esen.eres.resource.xml.server" img="&#xe21d;">
+						<resType id="EDIM$23$,EDIM$22$" helper="com.esen.edim.resource.DimensionResourceHelper" captionKey="com.esen.eres.resource.xml.projectdimmgr">
+						</resType>
+					</resType>
+					<resType id="EDSU$4$" helper="com.esen.edatasubject.resource.SubjectSetResourceHelper" img="edatasubject/images/resource/subjectset.gif">
+						<resType id="EDIM$31$" caption="维表" helper="com.esen.edim.resource.DimensionMgrResourceHelper" captionKey="com.esen.eres.resource.xml.server" img="&#xe21d;">
+							<resType id="EDIM$33$,EDIM$32$" helper="com.esen.edim.resource.DimensionResourceHelper" captionKey="com.esen.eres.resource.xml.subjectsetdim">
+							</resType>
+						</resType>
+						
+						<resType id="EPIBS$1$" helper = "com.esen.epibase.resource.helper.IndicatorBaseHelper" caption = "指标库">
+							<resType id="EPIBS$5$,EPIBS$9$" helper = "com.esen.epibase.resource.helper.PublicIndicatorFolderHelper" caption= "公共指标"/>
+							<resType id="EPIBS$2$" caption = "我的指标" img="edatasubject/images/resource/codemgr.gif" helper = "com.esen.epibase.resource.helper.PrivateIndicatorFixedHelper">
+								<resType id= "EPIBS$6$,EPIBS$7$,EPIBS$10$" caption="我的指标" helper = "com.esen.epibase.resource.helper.PrivateIndicatorFolderHelper"/>
+							</resType>
+							<resType id = "EPIBS$4$" caption="待审核指标" helper = "com.esen.epibase.resource.helper.AuditInIndicatorHelper">
+								<resType id="EPIBS$8$,EPIBS$12$" caption="待审核指标" helper = "com.esen.epibase.resource.helper.AuditingIndicatorFolderHelper"/>
+							</resType>
+						</resType>
+						
+						
+						<resType id="EDSU$6$" caption="主题表" captionKey="com.esen.eres.resource.xml.server" img="&#xe198;">
+							<resType id="EDSU$10$,EDSU$9$" caption="主题表" captionKey="com.esen.eres.resource.xml.server" helper="com.esen.edatasubject.resource.SubjectDirResourceHelper">
+								<resType id="EDSU$11$" caption="主题表字段" captionKey="com.esen.eres.resource.xml.server" helper="com.esen.edatasubject.resource.SubjectFieldResourceHelper">
+								</resType>
+							</resType>
+						</resType>
+						<resType id="EANA$0$" caption="分析表" captionKey="com.esen.eres.resource.xml.server" img="&#xe198;">
+							<resType id="EANA$1$,EANA$2$" caption="分析表" captionKey="com.esen.eres.resource.xml.server" helper="com.esen.eanalysemgr.resource.AnaGroupResHelper">
+							</resType>
+						</resType>
+					</resType>
+				</resType>
+			</resource>
+			<resource id="EACL$16$userpermission" caption="用户权限" captionKey="com.esen.eres.resource.xml.server" img="&#xe1ac;">
+				<resource id="EACL$16$userorg" caption="机构用户" captionKey="com.esen.eres.resource.xml.server" img="&#xe1ad;" />
+				<resource id="EACL$16$rolemgr" caption="角色管理" captionKey="com.esen.eres.resource.xml.server" img="&#xe1ae;" />
+				<resource id="EACL$16$permissionverify" caption="权限审计" captionKey="com.esen.eres.resource.xml.server" img="&#xe590;" />
+				<resource id="EACL$16$orgcfg" caption="库表配置" captionKey="com.esen.eres.resource.xml.server" img="&#xe1af;" />
+				<resource id="EACL$16$orgset" caption="高级设置" captionKey="com.esen.eres.resource.xml.server" img="&#xe1b0;" />
+				<resource id="EACL$16$freeaccess" caption="免登陆设置" captionKey="com.esen.eres.resource.xml.server" img="&#xe591;" />
+			</resource>
+			<resource id="ESYS$1$sysmgr" caption="系统设置" img="&#xe7e0;">
+					<resource id="ENOT$1$bulletin" caption="系统公告" img="&#xe213;" >
+						<resType id="ENOT$2$" caption="公告分组" helper="com.esen.enotice.resource.BulletinGroupResourceHelper">
+						</resType>
+					</resource>
+					<resource id="ESYS$1$jdbcmgr" caption="连接池管理" img="&#xe57a;">
+                    </resource>
+					<!-- <resource id="ESYS$1$product" caption="产品注册" img="&#xe214;">
+					</resource>
+					<resource id="ESYS$1$gatewayset" caption="互联互通配置" >
+					</resource>
+					<resource id="ESYS$1$backup" caption="备份与恢复" img="&#xe215;">
+					</resource> -->
+					<resource id="ESYS$1$resourcemgr" caption="资源管理器" img="&#xe217;">
+					</resource>
+					<!-- <resource id="EVRM$1$vrmodelmgr" caption="3D模型管理" img="&#xe218;">
+					</resource> -->
+					<resource id="ESYS$1$guistyle" caption="外观与主题" img="&#xe219;">
+					</resource>
+					<!-- <resource id="ESYS$1$activexes" caption="ActiveX插件" img="&#xe21a;">
+					</resource> -->
+					<resource id="EDIM$11$public" helper="com.esen.edim.resource.DimensionMgrResourceHelper" caption="公共维表" captionKey="com.esen.eres.resource.xml.server" img="&#xe21d;">
+						<resType id="EDIM$13$,EDIM$12$" caption="维表" captionKey="com.esen.eres.resource.xml.server" helper="com.esen.edim.resource.DimensionResourceHelper">
+						</resType>
+					</resource>
+					<resource id="ELOG$1$logmgr" caption="日志" img="&#xe783;">
+						<resource id="ELOG$2$elog_system" caption="系统日志" img="&#xe21c;"></resource>
+						<resource id="ELOG$2$EDF_ETLLOG" caption="ETL执行日志" img="&#xe21c;"></resource>
+					</resource>
+					<resource id="ESC$8$eschedulemgr" caption="计划任务" captionKey="com.esen.eres.resource.xml.server" img="&#xe1a1;">
+						<resType id="ESC$13$,ESC$17$" caption="计划任务及分组" helper="com.esen.eschedule.resource.ScheduleGroupResourceHelper">
+						</resType>
+					</resource>
+					<resource id="ESYS$1$performance" caption="性能与维护" img="&#xe21e;">
+						<resource id="ESYS$1$serverinfo" caption="系统信息" img="&#xe21f;">
+						</resource>
+						<!-- <resource id="ESYS$1$clusterinfo" caption="集群信息"  >
+						</resource> -->
+						<resource id="ESYS$1$sysdiagnosis" caption="系统诊断" img="&#xe220;">
+						</resource>
+						<resource id="ESYS$1$javathreads" caption="Java线程信息" img="&#xe221;">
+						</resource>
+						<resource id="ESYS$1$sessionsstatus" caption="当前在线状态" img="&#xe222;">
+						</resource>
+						<resource id="ESYS$1$threadpool" caption="线程池" img="&#xe223;">
+							<resource id="ESYS$1$threadpool_setup" caption="线程池设置" img="&#xe224;" >
+							</resource>
+							<resource id="ESYS$1$threadpool_status" caption="线程池状态" img="&#xe225;" >
+							</resource>
+						</resource>
+						<resource id="ESYS$1$javaconsole" caption="Java控制台" img="&#xe227;">
+						</resource>
+						<resource id="ESYS$1$workdir" caption="工作目录" img="&#xe228;">
+						</resource>
+						<resource id="ESYS$1$sysmaintenance" caption="系统维护" img="&#xe229;">
+						</resource>
+					</resource>
+			</resource>
+			<!-- <resource id="EMAPMGR$1$mapmgr" caption="地图管理" img="&#xe192;">
+			</resource> -->
+			
+			<resource id="EPOR$1$portal" caption="门户管理" captionKey="com.esen.eres.resource.xml.server" img="&#xe192;">
+				<resource id="EPOR$2$pcportal" caption="PC门户" captionKey="com.esen.eres.resource.xml.server" img="&#xe580;">
+					<resType id="EPOR$3$,EPOR$5$" caption="PC门户及分组" helper="com.esen.eportal.pcportal.portal.PortalResourceHelper">
+					</resType>
+				</resource>
+			</resource>
+			
+			<resource id="EWOF$1$workflow" caption="工作流"  img="&#xe192;">
+					<resource id="EWOF$1$wfdefmgr" caption="流程管理"  img="&#xe21f;">
+						<resType id="EWOF$3$,EWOF$4$" caption="流程分组和定义"  helper="com.esen.eworkflow.management.WorkflowDefinitionResourceHelper">
+						</resType>
+					</resource>
+					<resource id="EWOF$2$sysmgr" caption="系统设置" img="&#xe21f;">
+							<resource id="EWOF$2$serverset" caption="设置" img="&#xe21c;"></resource>
+							<resource id="EWOF$2$mobileset" caption="移动端设置" img="&#xe21c;"></resource>
+						</resource>
+					<resource id="EWOF$2$search" caption="查询统计" img="&#xe21f;">
+							<resource id="EWOF$2$queryinstances" caption="实例查询" img="&#xe21c;">
+								<resource id="EWOF$2$finished" caption="已完成" img="&#xe21c;"></resource>
+								<resource id="EWOF$2$unfinished" caption="未完成" img="&#xe21c;"></resource>
+							</resource>
+							<resource id="EWOF$2$gstj" caption="工时统计" img="&#xe21c;"></resource>
+							<resource id="EWOF$2$dashboard" caption="运行仪表盘" img="&#xe21c;">
+								<resource id="EWOF$2$ssqk" caption="实时情况" img="&#xe21c;"></resource>
+								<resource id="EWOF$2$gzfh" caption="工作负荷" img="&#xe21c;"></resource>
+								<resource id="EWOF$2$gzxl" caption="工作效率" img="&#xe21c;"></resource>
+								<resource id="EWOF$2$lcyx" caption="流程运行" img="&#xe21c;"></resource>
+							</resource>
+						</resource>
+					<resource id="EWOF$2$myflow" caption="我的流程" img="&#xe21f;">
+							<resource id="EWOF$2$todo" caption="待办事项" img="&#xe21c;"></resource>
+							<resource id="EWOF$2$tosign" caption="待签收事项" img="&#xe21c;"></resource>
+							<resource id="EWOF$2$start" caption="发起流程" img="&#xe21c;"></resource>
+							<resource id="EWOF$2$attend" caption="参与的流程" img="&#xe21c;"></resource>
+					</resource>
+			</resource>
+			<resource id="EACL$9$personal" caption="个人设置" captionKey="com.esen.eres.resource.xml.personal" img="&#xe83f;">
+			</resource>
+			<resource id="EACL$100$netschoolres" caption="资源管理" captionKey="com.esen.eres.resource.xml.res" img="&#xe1ac;">
+				<resource id="EACL$100$userorg" caption="课件管理" captionKey="com.esen.eres.resource.xml.res" img="&#xe1ad;" />
+				<resource id="EACL$100$freeaccess" caption="学习资源管理" captionKey="com.esen.eres.resource.xml.res" img="&#xe591;" />
+			</resource>
+			
+		</resource>
+		<resType id="EACL$1$" caption="机构" helper="com.esen.eacl.resource.helper.OrgResourceHelper">
+			<resType id="EACL$2$" caption="用户" helper="com.esen.eacl.resource.helper.UserResourceHelper">
+			</resType>
+		</resType>
+		<resType id="EACL$4$"  caption="角色" helper="com.esen.eacl.resource.helper.RoleResourceHelper">
+		</resType>
+		<resType id="EDIM$15$" caption="维表项" captionKey="com.esen.eres.resource.xml.server" helper="com.esen.edim.resource.DimensionItemResourceHelper">
+		</resType>
+		<resType id="EDIM$35$" caption="主题集维表项" captionKey="com.esen.eres.resource.xml.subjectsetdim" helper="com.esen.edim.resource.DimensionItemResourceHelper">
+		</resType>
+		<resType id="EDIM$25$" caption="主题域维表项" captionKey="com.esen.eres.resource.xml.projectdim" helper="com.esen.edim.resource.DimensionItemResourceHelper" >
+		</resType>
+		<resType id="EDSO$35$" caption="数据库表" helper="com.esen.edatasource.resources.JdbcConnTableResHelper" captionKey="com.esen.eres.resource.xml.datasource">
+		</resType>
+		<resType id="EDSO$36$" caption="视图" helper="com.esen.edatasource.resources.JdbcViewResHelper" captionKey="com.esen.eres.resource.xml.datasource" >
+		</resType>
+		<resType id="EDSO$34$" caption="系统表" helper="com.esen.edatasource.resources.JdbcSysTableResHelper" captionKey="com.esen.eres.resource.xml.datasource">
+		</resType>
+	</resources>
+</resconfig>
